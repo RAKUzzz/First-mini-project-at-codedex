@@ -1,0 +1,56 @@
+import math
+
+pi    = (math.pi)
+Shape = 0
+
+print("==================")
+print("Area Calculator 📐")
+print("==================")
+
+print("Please select number")
+print("1) Triangle 📐")
+print("2) Rectangle █")
+print("3) Square 🟨")
+print("4) Circle 🔴")
+print("5) Quit")
+Shape = int(input("Which shape:"))
+while Shape<=0 or Shape>5:
+    Shape = int(input("❌Wrong number,Please select number 1-5:"))
+
+if Shape == 1:
+    print("📐Triangle Area📐")
+    hight   = int(input("Hight:"))
+    base    = int(input("Base:"))
+    print("Hight:",hight,"  Base:",base)
+    TriangleCal = (hight*base)/2
+    print ("The answer:",TriangleCal,"✅")
+elif Shape == 2:
+    print("█ Rectangle Area █")
+    lenght  = int(input("Lenght:"))
+    width   = int(input("Width:"))
+    print("Lenght:",lenght,"  Width:",width)
+    RectangleCal = lenght*width
+    print("The answer:",RectangleCal,"✅")
+elif Shape == 3:
+    print("🟨 Square Area🟨")
+    side    = int(input("Side:"))
+    print("Side:",side)
+    SquareCal = side**2
+    print("The answer:",SquareCal,"✅")
+elif Shape == 4:
+    print("🔴 Circle Area🔴") 
+    radius  = int(input("Radius:"))
+    print("Radius:",radius)
+    CircleCal = pi*(radius**2)
+    print("The answer:",CircleCal,"✅")
+elif Shape == 5:
+    print("❌Program End❌")    
+else:
+    print("Program error")
+ 
+
+
+    
+
+
+    
